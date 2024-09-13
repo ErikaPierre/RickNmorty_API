@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  padding: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER COMPONENT */
+#header {
+  margin-bottom: 10px;
+}
+
+/* NAVBAR COMPONENT */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+#buttonsFilter {
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+#searchBar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* HOME PAGE */
+#title {
+  display: flex;
+  justify-content: center;
+  border-top: 2px dotted black;
+  border-bottom: 2px dotted black;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+#grid_Card {
+  display: flex;
+  justify-content: center;
+}
+
+/* CARD COMPONENT */
+.votes {
+  display: flex;
+  justify-content: space-around;
+}
+
+#Likes,
+#Dislike {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 10px;
+}
+
+#Likes button,
+#Dislike button {
+  border: none;
+  background-color: inherit;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+/* INFOS PAGE */
+#infosCharacter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#details h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-top: 20px;
+  padding: 30px;
+}
+
+#infosCharacter img {
+  width: 550px;
+  border-bottom: 2px dotted black;
+  border-radius: 100%;
+  padding: 35px;
+}
+
+#details p {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .navigation {
+    flex-direction: column;
+  }
+
+  #buttonsFilter {
+    width: 80%;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #infosCharacter img {
+    width: 350px;
+    border-bottom: 2px dotted black;
+    border-radius: 100%;
+    padding: 35px;
+  }
+}
